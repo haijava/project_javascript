@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Check leapYear</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let leapYear =parseInt(prompt("Nhập năm"));
+		if (leapYear%4==0) 
+		   {
+			if (leapYear%100==0) 
+			  {
+				if (leapYear%400==0) 
+					{
+					alert(leapYear +' là năm nhuận');
+					}else alert(leapYear +' không phải là năm nhuận');
+			  }else alert(leapYear +' là năm nhuận');
+		   } else alert(leapYear + ' không phải là năm nhuận');
+	</script>
+</body>
+</html>
