@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event Mouse</title>
+</head>
+<script type="text/javascript">
+	let imgOject=null;
+	imgOject=document.getElementById("myBal");
+	function init() {
+		imgOject=document.getElementById("myBal");
+		imgOject.style.position='relative';
+		imgOject.style.left='0px';
+		imgOject.style.top='0px';
+
+	}
+	function moveRight(){
+		imgOject.style.left=parseInt(imgOject.style.left) + 20 +'px';
+	}
+	function moveLeft(){
+		imgOject.style.left=parseInt(imgOject.style.left) - 20 +'px';
+	}
+	function moveUp(){
+		imgOject.style.top =parseInt(imgOject.style.top) - 20 +'px';
+	}
+	function moveDow(){
+		imgOject.style.top=parseInt(imgOject.style.top) + 20 +'px';
+	}
+	window.onload=init;
+</script>
+<body>
+	<div>
+		<form action="">
+			<img src="ball.png" id="myBal" style="width: 200px;height: 100px">
+			    <h1>Click button below to move the image to right</h1>
+			   <input type="button" value="Phải" onclick="moveRight()">
+			   <input type="button" value="Trái" onclick="moveLeft()">
+			   <input type="button" value="Lên" onclick="moveUp()">
+			   <input type="button" value="xuống" onclick="moveDow()">
+		</form>
+	</div>
+</body>
+</html>
