@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Switch case</title>
+	
+</head>
+
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<td>
+					<input type="text" id="demo">
+				</td>
+				<td>
+				<button type="button" onclick= "myCheckMon()">Hiển Thị</button>		
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="" id="shoo">
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		</table>
+		   	
+		</form>	
+
+	<script>
+		
+		function myCheckMon() {
+			let numMon = parseInt(document.getElementById("demo").value);
+			switch(numMon) {
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:		
+					document.getElementById("shoo").value="Tháng " + numMon + "có 31 ngày";
+				    break;
+				break;
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+					document.getElementById("shoo").value="Tháng" + numMon + " có 30 ngày";
+				break;
+				case 2:
+					document.getElementById("shoo").value="Tháng " + numMon + " có 28 ngày";
+				break;
+				default:
+				 	document.write("bạn nhập sai dữ liệu");
+				 break;
+
+			}
+		}
+	</script>	
+</body>
+</html>
