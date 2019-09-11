@@ -1,0 +1,17 @@
+body{
+	font-weight: bold;
+}
+table{
+	text-align: center;
+
+}
+table select{
+	width: 200px;
+	font-weight: bold;
+}
+ input{
+	width: 400px;
+}
+table button{
+	width: 200px;
+}
