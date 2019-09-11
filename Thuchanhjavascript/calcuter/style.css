@@ -1,0 +1,31 @@
+table{
+	width: 250px;
+	height: 300px;
+	border: 3px solid black;
+	padding-bottom: 15px;
+}
+
+td{	width: 105px;
+	height: 56px;
+}
+td button{
+width: 55px;
+height: 56px;
+color: blue;
+font-size: 23px;
+font-weight: 700;
+margin-bottom: 0px;
+background-color: white;}
+td button:hover{
+background-color: red;
+}
+
+td input#reSult{
+    width: 236px;
+    height: 53px;
+    outline: 0.5px solid grey;
+    padding-top: 8px;
+    margin-top: 22px;
+    margin-bottom: 13px;
+}
+
