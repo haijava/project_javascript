@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gamepuzz</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div id="change">
+		<img src="image/panda1.jpg" id="pi1" alt="1" style="width: 300px;height: 100px" onclick="clickR01()"><br/>
+		<img src="image/monkey1.jpg" id="pi2" alt="2" style="width: 300px;height: 100px" onclick="clickR02()"><br/>
+		<img src="image/funny-cat1.jpg" id="pi3" alt="3" style="width: 300px;height: 100px" onclick="clickR03()"><br/>
+	</div>
+	<script type="text/javascript">
+	let rounNu1 = document.getElementById('pi1'),
+	 	rounNu2 = document.getElementById('pi2'),
+	 	rounNu3 = document.getElementById('pi3');
+	function clickR01() {
+		let random=Math.floor((Math.random()*3)+1);
+			switch(random) {
+				case 1 :
+					rounNu1.src='image/panda1.jpg';
+					rounNu1.alt=1;
+				break;
+				case 2 :
+					rounNu1.src='image/monkey1.jpg';
+					rounNu1.alt=2;
+				break;
+				case 3 :
+					rounNu1.src='image/funny-cat1.jpg';
+					rounNu1.alt=3;
+			}
+			finish();	
+	}
+	function clickR02() {
+		let random=Math.floor((Math.random()*3)+1);
+			switch(random) {
+				case 1 :
+					rounNu2.src='image/panda2.jpg';
+					rounNu2.alt=1;
+				break;
+				case 2 :
+					rounNu2.src='image/monkey2.jpg';
+					rounNu2.alt=2;
+				break;
+				case 3 :
+					rounNu2.src='image/funny-cat2.jpg';
+					rounNu2.alt=3;
+			}
+		finish();	
+	}
+	
+	function clickR03() {
+		let random=Math.floor((Math.random()*3)+1);
+			switch(random){
+				case 1 :
+					rounNu3.src='image/panda3.jpg';
+					rounNu3.alt=1;
+				break;
+				case 2 :
+					rounNu3.src='image/monkey3.jpg';
+					rounNu3.alt=2;
+				break;
+				case 3 :
+					rounNu3.src='image/funny-cat3.jpg';
+					rounNu3.alt=3;
+			}
+		finish();
+	}
+	function check() {
+           return rounNu1.alt +rounNu2.alt + rounNu3.alt === "111" || rounNu1.alt +rounNu2.alt + rounNu3.alt === "222" ||
+           		  rounNu1.alt +rounNu2.alt + rounNu3.alt === "333"
+	
+    }
+    function finish() {
+          if (check()){
+               document.getElementById("change").style = "box-shadow:2px 2px 30px 10px red; width: 340px;"
+           }
+           else {
+               		document.getElementById("change").style = "width: 300px;"
+                }  
+    }
+</script>
+</body>
+</html>
