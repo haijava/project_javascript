@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 1</title>
+</head>
+<body>
+	
+	<script>
+		totalN();
+		function totalN() {
+			let total=0;
+			let numN=null;
+			 while (numN != -1){
+			 	if (isNaN(numN) == false){
+			 		total = total + numN;
+				}
+			 	numN=parseInt(prompt("nhâp n"));
+			 } alert(total);
+
+			/*do{
+				if (isNaN(numN) == false){
+					total = total + numN;
+				}
+				numN = parseInt(prompt("nhập n"));
+			  } while(numN !=-1)
+			     
+			 alert(total);*/
+		}
+		
+	</script>
+</body>
+</html>
