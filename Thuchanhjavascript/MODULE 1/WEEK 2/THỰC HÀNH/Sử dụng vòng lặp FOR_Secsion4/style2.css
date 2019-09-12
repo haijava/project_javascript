@@ -1,0 +1,25 @@
+table{
+	width: 200px
+}
+#inputs, #hienthi{
+	width: 125px;
+	height: 26px;
+}
+#total{
+width: 54px;
+height: 31px;
+}
+p{
+	width: 53px;
+	height: 0px;
+	padding-bottom: 11px;
+	
+}
+#td1{
+	width: 87px;
+	height: 39px;
+}
+#td2{
+	width: 10px;
+
+}

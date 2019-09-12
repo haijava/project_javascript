@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 2</title>
+</head>
+<link rel="stylesheet" href="style2.css">
+<body>
+	<table>
+		<h1>Tính tổng số nhập vào</h1>
+		<tr>
+			<td id="td1" ><p>Nhập số</p></td>
+			<td id="td2" ><input type="text" id="inputs"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Tổng" onclick="totalNu()" id="total"></td>
+			<td><input type="text" id="hienthi"></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function totalNu() {
+			let totalN=0;
+			let numN = parseInt(document.getElementById('inputs').value);
+			for (i=1 ; i <=numN ; i++) {
+				totalN =totalN + i;
+			}
+			document.getElementById("hienthi").value=totalN;
+		}
+	</script>
+</body>
+</html>
