@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 1</title>
+</head>
+<body>
+	<script>
+		displays();
+		function displays() {
+				let numIn=null;
+			do{
+				 numIn =parseInt(prompt("nhập một số"));
+				
+				while(isNaN(numIn)) {
+					 numIn =parseInt(prompt("nhập lại"));
+				}
+			} while(numIn < 1 || numIn >10 )
+			alert("Giá trị bạn vừa nhâp" + numIn);
+		}
+		
+	</script>
+</body>
+</html>
