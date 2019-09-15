@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 10</title>
+</head>
+<body>
+	<input type="button" value="GamePlay" onclick="playGame()">
+
+<script type="text/javascript">
+function playGame() {
+	let batdau = 0;
+	let kethuc = 0;
+	let count = 0;
+	let random = 0;
+	batdau = +(prompt("nhập số khoảng bắt đầu"));
+	ketthuc = +(prompt("nhập số khoảng kết thúc"));
+	rand = Math.floor(Math.random()*(kethuc - batdau) + batdau);
+	let batki = + prompt("nhập sô bất kì");
+	if (batki == rand) 
+	  	alert("bạn may mắn trúng rồi đó");
+	  else
+	  	alert('trật rroif');
+	while (batki != rand) {
+	 	 	 batki = + prompt("nhập sô bất kì ");
+	 	 	 if (batki == rand) {
+	 	 	 	alert('bạn trung ô tô rồi');
+	 	 	 }
+	  		 else if (batki > rand) {
+	  			alert("bạn nhập lớn hơn rồi");
+	  			count ++;
+	  			
+	  		 }else if(batki < rand) {
+	  			alert('bạn nhập nhỏ hơn rồi');
+	  			count ++;
+	  			
+	  		 }
+	  		if(count == 3) {
+	  			alert('bạn nhâp quá 3 lần rồi ');
+	  			break;
+	  		}
+
+	  	}	
+}		
+	</script>
+</body>
+</html>

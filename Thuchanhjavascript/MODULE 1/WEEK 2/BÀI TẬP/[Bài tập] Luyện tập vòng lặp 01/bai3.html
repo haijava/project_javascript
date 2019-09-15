@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fabonacci(n) {
+			let f0= 0;
+			let f1= 1;
+			let fn= 1;
+			if (n<0) 
+				return false;
+			if(n==0 ||n==1)
+				return f0;
+			else{ 
+				for (let i = 2; i < n; i++) {
+					f0= f1;
+					f1= fn;
+					fn= f0 + f1;
+				}
+
+				return fn;
+			}	
+			
+		}
+		function showFa(m){
+			for (let i = 0; i <= m;i++) {
+				if(parseInt(fabonacci(i)))
+					document.write(fabonacci(i) +",");
+
+			}
+		}
+		let m= +prompt("nhâp sô fabonacci");
+		showFa(m);
+		
+	</script>
+</body>
+</html>

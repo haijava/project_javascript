@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fabonacci(n) {
+			let f0= 0;
+			let f1= 1;
+			let fn= 1;
+			if (n<0) 
+				return false;
+			if(n==0||n==1)
+				return fn;
+			else{ 
+				for (let i = 2; i < n; i++) {
+					f0= f1;
+					f1= fn;
+					fn= f0 + f1;
+				}
+				return fn;
+			}	
+			
+		}
+		function mod5(k){
+			for (let i = 0; i <= k; i++) {
+				if (fabonacci(i)%5 === 0) {
+					document.write(fabonacci(i));
+				}
+			}
+		}
+		let k= +prompt("nhâp sô fabonacci");
+		mod5(k);
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo thôi
+	</title>
+</head>
+<body>
+<script>
+		
+		function moSev(c) {
+		 	
+		 	if (c%7==0) 
+		 		return c;
+		 	
+		 } 
+	   function totalSe7(){
+	   	let m = parseInt(prompt("nhap m"));
+		let totalS = 0;
+		let count = 1;
+		for (let i=7; count <= m ; i++) {
+			if(moSev(i))
+			{
+				totalS=totalS + moSev(i);
+				count ++ ;
+			}
+		}
+		document.write(totalS);
+
+	   }
+	   totalSe7();
+
+</script>
+</body>
+</html>

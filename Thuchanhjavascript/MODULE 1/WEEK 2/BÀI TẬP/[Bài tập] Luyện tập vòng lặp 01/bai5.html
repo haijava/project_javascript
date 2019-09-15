@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fabonacci(n) {
+			let f0= 0;
+			let f1= 1;
+			let fn= 1;
+			if (n<0) 
+				return false;
+			if(n==0|| n==1)
+				return fn;
+			else{ 
+				for (let i = 2; i < n; i++) {
+					f0= f1;
+					f1= fn;
+					fn= f0 + f1;
+				}
+				return fn;
+			}	
+			
+		}
+		/*function showFa(m){
+			for (let i = 1; i <= m;i++) {
+				if(fabonacci(i))
+					document.write(fabonacci(i) +",");
+
+			}
+		}*/
+	function mod5(k){
+			let tong= 0;
+			for (let i = 1; i<= k; i++) {
+				if (fabonacci(i)) 
+					tong= tong + fabonacci(i);
+				document.write(fabonacci(i) + ",");
+			 }
+			document.write("<br>");
+		    document.write("tổng " + k + "  đầu tiên trong dãy fibo là :" +tong); 
+	}
+	let k= +prompt("nhâp sô fabonacci");
+		/*
+		showFa(k);*/
+		mod5(k);
+	</script>
+</body>
+</html>
