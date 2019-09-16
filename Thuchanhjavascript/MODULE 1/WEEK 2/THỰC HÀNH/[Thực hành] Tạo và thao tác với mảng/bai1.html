@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+	 
+</head>
+<body>
+	<p>Sample Screen:</p>
+	<input type="text" id="txttext" >
+	<input type="button" value ="ADD" id="btnadd" onclick="adddAray()">
+	<input type="button" value ="DISPLAY" id="btndis" onclick="dissPlay()">
+	<div id="show"></div>
+<script type="text/javascript">
+		let x = 0 ;
+		let array = [];
+		function adddAray() {
+			array[x] = document.getElementById("txttext").value;
+			alert("Phần tử: " + array[x] + " Được thêm vào  " + x);
+			x++;
+			document.getElementById("txttext").value= "";
+		}
+
+		function dissPlay() {
+			let e = "<hr/>" ;
+			for (let i=0; i < array.length; i++) {
+				e += " Phần tử mảng " + i + " = " + array[i] + "<br>";
+			}
+			document.getElementById("show").innerHTML= e;
+		}
+
+</script>
+</body>
+</html>
