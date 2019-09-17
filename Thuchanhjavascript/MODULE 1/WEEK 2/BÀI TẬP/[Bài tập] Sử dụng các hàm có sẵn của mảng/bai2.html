@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arr=[];
+	let number = prompt("nhập chuổi").toString();
+	arr[0] = number[0];
+	for (let i= 1; i < number.length; i++) {
+		if((number[i-1]%2===0)&&(number[i]%2===0)) {
+			arr.push('-',number[i-1]);
+		}
+		else arr.push(number[i]);
+	}
+	number='';
+	for (let i=0; i < arr.length; i++) {
+		number +=arr[i];
+	}
+document.write(number);
+</script>
+</body>
+</html>
