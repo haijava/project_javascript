@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="txttet">
+	<input type="button" value="Translate" id="trans" onclick="dich();">
+	<p id="show"></p>
+<script type="text/javascript">
+function dich() {
+	let viet = ["chào","tên","tuổi"];
+	let anh	 = ["hello","name","age"];
+	let b=document.getElementById('txttet');
+	let flg = false;
+	let ketqua ;
+	for (var i = 0; i < viet.length; i++) {
+		 if (b.value == viet[i]) {
+		 	ketqua = anh[i];
+		 	flg = true;
+		 }
+		 
+	}
+	if (flg == true) 
+		document.getElementById("show").innerHTML = ketqua;
+	else
+		document.getElementById("show").innerHTML = "không tìm thấy";
+	
+		
+}
+	
+</script>
+</body>
+</html>
