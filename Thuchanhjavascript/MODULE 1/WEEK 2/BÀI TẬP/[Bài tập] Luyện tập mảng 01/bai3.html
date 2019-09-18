@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 3</title>
+</head>
+<body>
+<script>
+	let arrIn=[2,6,4,5,7,8,9];
+	let max =0;
+	let vitri=0;
+	max= arrIn[0];
+	let total = 0;
+	let tb=0;
+	let average =0;
+	for (let i=0; i < 7; i++) {
+		if (max<arrIn[i]) {
+			max=arrIn[i];
+			vitri=i;
+		}
+		total = total + arrIn[i];
+		tb++;
+
+	}
+	document.write("Giá trị lớn nhất mảng là "+ max +" có vị trí " +vitri + "<br>");	
+	//alert((total/tb));
+	document.write(" trung bình cộng của các phần tử trong mảng " + (total/tb));
+</script>
+</body>
+</html>

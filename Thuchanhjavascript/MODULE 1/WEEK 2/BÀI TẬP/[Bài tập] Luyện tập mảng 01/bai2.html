@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai2</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	let arrIn=[2,6,4,77,3,23,9,6,56,34];
+	let max =0;
+	let vitri=0;
+	max=arrIn[0];
+	for (let i=1; i < 10; i++) {
+		if (max<arrIn[i]) {
+			max=arrIn[i];
+			vitri=i;
+		}
+	}
+	document.write(max+"có vị trí"+vitri);
+</script>
+</body>
+</html>

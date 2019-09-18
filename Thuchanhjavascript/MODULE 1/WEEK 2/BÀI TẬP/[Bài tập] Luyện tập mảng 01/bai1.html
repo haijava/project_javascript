@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+</head>
+<body>
+<script type="text/javascript">
+	let numArr = parseInt(prompt("nhập số phần tử mảng"));
+	let arrIn = [];
+	let count =0;
+	let kq =0;
+	let xh ='';
+	for (let i=0; i < numArr; i++) {
+		xh += "<br>";
+		arrIn[i] = Math.floor(Math.random()*20 + 1);
+		if (arrIn[i] >= 10) {
+			count = count + 1;
+
+			kq= arrIn[i];
+
+					}
+		document.write(arrIn[i] +" , ");
+	}
+	document.write(" Có :" + count + " số lớn hơn hoặc bằng 10 trong mảng" + "<br> ");
+	
+</script>
+</body>
+</html>

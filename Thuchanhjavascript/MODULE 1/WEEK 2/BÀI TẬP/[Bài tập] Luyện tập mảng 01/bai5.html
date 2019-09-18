@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai5</title>
+</head>
+<body>
+<script>
+	
+let string = prompt("nhâp một chuổi");
+let count= 0;
+let str='';
+for (let i=0; i< string.length; i++) {
+	if (string[i]=='u' || string[i]=='i' ||string[i]=='e' ||string[i]=='a'|| string[i]=='o') {
+		count++;
+		string[i]='u';
+		string[i]='e';
+		string[i]='i';
+		string[i]='o';
+		string[i]='a';
+		str += string[i] + " , ";
+	}
+	
+}
+document.write("số lần chữ nguyên âm xuất trong chuổi:" + count + "<br>");
+document.write(str);
+</script>
+</body>
+</html>

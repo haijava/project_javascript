@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 4</title>
+</head>
+<body>
+<script type="text/javascript">
+	let numIn = + prompt("Nhập số phần tử mảng")
+	let arrIn =[];
+	let firsts = 0;
+	let lasts = numIn -1;
+	let kq=0;
+	for(let i=0;i<numIn;i++){
+		arrIn[i]= +prompt("nhâp" +i);
+		kq=arrIn[i];
+		document.write(kq+" , ");
+	}
+	while (firsts<lasts) {
+	 		
+			let tam = arrIn[firsts];
+			arrIn[firsts] =arrIn[lasts];
+			arrIn[lasts] = tam;
+			firsts ++;
+			lasts --;
+
+		}
+	document.write(arrIn);
+
+</script>
+</body>
+</html>

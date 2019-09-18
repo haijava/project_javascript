@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai7</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arrA= [2,4,3,1,5,7,9];
+	let deleK = +prompt("nhập số cần xóa trong mảng");
+	let tam=0;
+	while (isNaN(deleK)) {
+		deleK = +prompt("Bạn phải nhập đúng số ");
+	}
+	for (let i=0; i < arrA.length; i++) {
+		if (arrA[i]==deleK) {
+
+			let tam = i;
+			
+			for (let j=tam; j < arrA.length-1; j++) {
+				arrA[j]=arrA[j+1];
+				
+			}
+			arrA.length --;
+	    }
+	}
+	document.write(arrA);
+</script>
+</body>
+</html>

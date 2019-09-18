@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai8</title>
+</head>
+<body>
+<script type="text/javascript">
+  let arrA=[2,7,6,5,8,9,4,1,10,3];
+
+  for(let i=0 ; i<arrA.length ; i++){
+
+  	 	for (let j = 0; j < arrA.length; j++) {
+  
+  			if (arrA[i] > arrA[j] ){
+
+  				let tam =arrA[i];
+
+  				arrA[i]=arrA[j];
+
+  				arrA[j] = tam; 
+  			}
+  	  	}
+    }
+
+  	document.write(arrA);
+
+</script>
+</body>
+</html>
