@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai4</title>
+</head>
+<body>
+<script>
+       let str ='2q42q54qqaftwqrweqeqe213';
+       let count = 0;
+       let countkt =0;
+       let reg = new RegExp(`[^0-9]`);
+       for (let i = 0; i < str.length; i++) {
+            if (str[i].match(reg)) {
+            	countkt ++;
+            }
+        }
+       document.write("số kí tự trong chuổi" +countkt);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 3</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arrA =['a','c','f','4','5','9','100'];
+	let count =0;
+	let reg = new RegExp('[0-9]');
+	for (let i=0; i < arrA.length; i++) {
+		if (arrA[i].match(reg)) {
+			count+=1;
+		}
+	}
+	document.write("số kí tự số trong mảng "+ count);
+</script>
+</body>
+</html>

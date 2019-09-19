@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+</head>
+<body>
+<script type="text/javascript">
+	let str ="row";
+	let arrA =[[1, 2, 1, 24],[8, 11, 9, 4],[7, 0, 7, 27],[7, 4, 28, 14],[3, 10, 26, 7]];
+	document.write("row 0");
+	for (let i=0; i < arrA.length -1; i++) {
+		document.write("<br/>");
+		for (let j=0; j<arrA.length -1;j++ ) {
+			if (i==0) {
+				document.write( arrA[i][j] + " , ");
+			}
+		}
+	}
+	document.write("row 1");
+	for (let i=0; i < arrA.length -1; i++) {
+		document.write("<br/>");
+		for (let j=0; j<arrA.length-1;j++ ) {
+			if (i==1) {
+				document.write(arrA[i][j]+" , ");
+			}
+		}
+	}
+	document.write("row 2");
+	for (let i=0; i < arrA.length -1; i++) {
+		document.write("<br/>");	
+		for (let j=0; j<arrA.length-1;j++ ) {
+			if (i==2) {
+				document.write( arrA[i][j]+" , ");
+			}
+		}
+	}
+	document.write("row 3");
+	for (let i=0; i < arrA.length -1; i++) {
+		document.write("<br/>");	
+		for (let j=0; j<arrA.length-1;j++ ) {
+			if (i==3) {
+				document.write( arrA[i][j]+" ,");
+			}
+		}	
+	}
+	
+</script>
+</body>
+</html>
