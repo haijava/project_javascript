@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 2</title>
+</head>
+<body>
+	<script>
+		factoryNumber();
+		function factoryNumber() {
+			let numI = null;
+			let totaGt = 1;
+			let i = 1;
+			while (Number.isInteger(numI) == false) {
+			numI = + prompt("nhập sồ giai thừa");
+			}
+			
+			// vòng lặp while
+			/*while (i <= numI) {
+				totaGt = totaGt * i;
+				i++;
+			}
+			alert(totaGt);*/
+			//vòng lặp for
+			/*for (let i=1; i <= numI; i++) {
+			totaGt= totaGt * i;
+			}
+				alert(totaGt);	
+			*/
+			// Vòng lặp  do.. . while
+			do{
+				totaGt = totaGt * i;
+				i++;
+			}while(i <= numI)
+			alert(totaGt);
+
+		}		
+	</script>
+</body>
+</html>

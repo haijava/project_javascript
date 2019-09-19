@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cờ rô</title>
+</head>
+<body>
+	<p id="caroo"></p>
+<script type="text/javascript">
+	let bb= "<input type ='button' id='btnbuton' value= 'ChangeValue'>";
+	let ccr =[];
+	let dd= "";
+	let sh = document.getElementById('caroo');
+	for (let i=0; i < 3; i++) {
+		dd += "<br>";
+		ccr[i] = new Array(" <input type='button' value='O'> "," <input type='button' value='O'> "," <input type='button' value='O'> "," <input type='button' value='O'> "," <input type='button' value='O'> "," <input type='button' value='O'> ");
+		for (let j=0; j < 3; j++) {
+			dd += ccr[i][j];
+		}
+
+	}
+	dd+= "<br>" + "<br>" + bb;
+	sh.innerHTML=dd;
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		let bcc;
+		bcc="<table border= '1' width= '800' height= '600' >";
+		let i=0;
+		let j=0;
+		for (i=0; i <5; i++) {
+			bcc= bcc+ "<tr>";
+			 for(j=0;j<5;j++){
+			 	bcc= bcc+ "<td>" '&nbsp'+'&nbsp'+'&nbsp'+" * " "</td>";
+			 }
+
+			bcc=bcc+ "</tr>"; 
+		}
+		bcc=bcc+ "</table>";
+		document.write(bcc);
+	
+	</script>
+</body>
+</html>

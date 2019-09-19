@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function checkFibo(n) {
+			
+		let f0 = 0;
+		let f1 = 1;
+		let fn = 1;
+		if (n<0) {
+			return false;
+		}
+		if (n == 0 || n==1) {
+			return n;
+		}
+		else 
+			for (let i=2; i < n; i++) {
+				f0 = f1;
+				f1 = fn;
+				fn = f0 + f1;
+			}
+		return fn;	
+	   }
+	function shoFibo(m){
+		for(let i = 0; i<= m; i++){
+			if (checkFibo(i)) {
+				document.write(checkFibo(i)+",");
+			}
+		}
+	}	
+	let m = null;
+	while (Number.isInteger(m)== false) {
+		m = + prompt(" nhập số fibo");
+	}
+	shoFibo(m);
+	</script>
+</body>
+</html>

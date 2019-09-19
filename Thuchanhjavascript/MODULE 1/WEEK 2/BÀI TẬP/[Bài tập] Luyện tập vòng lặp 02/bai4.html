@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai4</title>
+</head>
+<body>
+	<script>
+		let numM = parseInt(prompt("nhập dòng"));
+		let numN = parseInt(prompt("nhập cột"));
+		for (var i = 0; i < numM; i++) {
+			document.write("<br>");
+			
+			 for(let j = 0; j<numN; j++){
+			 	if(i == 0 || j == 0 || i == numM -1 || j == numN-1)
+			 	document.write(" * ");
+			 	else
+			 	 document.write('&nbsp'+'&nbsp'+'&nbsp' );
+			 }
+			    
+			    
+		}	
+	</script>
+	
+</body>
+</html>
