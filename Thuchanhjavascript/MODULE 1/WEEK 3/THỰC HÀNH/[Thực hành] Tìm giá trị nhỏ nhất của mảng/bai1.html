@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+</head>
+<body>
+<script type="text/javascript">
+function inputA() {
+	let inPutArr =+prompt("nhập số phần tử mảng");
+	while (isNaN(inPutArr)) {
+		inPutArr=+prompt("Bạn phải nhập số không nhập kí tự");
+	}
+	return inPutArr;
+}
+function creatArr(arr,n) {
+	for (let i = 0; i < n; i++) {
+		arr[i]= Math.floor(Math.random()*100 + 1 );
+	}
+}
+function showArr(arr,n) {
+	for(let i=0;i<n;i++){
+		document.write(arr[i]+", ");
+	}
+}
+function findSmall(arr,n) {
+	let small =arr[0];
+	for (let i=1; i < n; i++) {
+		if(arr[i]<small){
+			small =arr[i];
+		}
+	}
+	return small;
+}
+function main() {
+	let n=inputA();
+	let arr =[];
+	creatArr(arr,n);
+	showArr(arr,n);
+	document.write("<br>");
+	document.write(" Số nhỏ nhất trong mảng: " +findSmall(arr,n));
+}
+main();
+
+</script>
+</body>
+</html>
