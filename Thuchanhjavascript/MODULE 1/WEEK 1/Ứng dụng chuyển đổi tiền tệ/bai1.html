@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chuyển đổi tiền tệ
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<h1>Chuyển đổi tiền </h1>
+	<table>
+		<tr>
+			<th>Amount</th>
+			<th>From Currency</th>
+			<th>To Currency</th>
+
+		</tr>
+		<tr>
+			<td><input type="text" id="txtamount" class="kk" value="1" ></td>
+			<td>
+				<select id="tt" class="kk">
+					<option value="VietNam" >Việt Nam</option>
+					<option value="USD">USD</option>
+				</select>
+			</td>
+			<td>
+				<select id="tt1" class="kk">
+					<option value="USD" >USD</option>
+					<option value="VietNam" >Việt Nam</option>
+					
+				</select></td>
+			<td><input type="button" value="Convert" id="btnconver" class="kk" onclick="conveMoney()"></td>
+		</tr>
+		
+	</table>
+	<p id="show"></p>	
+	
+<script type="text/javascript">
+function conveMoney() {
+	let a = document.getElementById('txtamount').value;
+	let b = document.getElementById('tt').value;
+	let c = document.getElementById('tt1').value;
+	let d=' Result: '
+	if (b=='VietNam'&& c=='USD') 
+		document.getElementById("show").innerHTML=d +(a/23000)+" USD";
+	
+	else 
+		if (b=='USD' && c=='VietNam') {
+		document.getElementById("show").innerHTML=d+(a*23000)+"VND";
+	    } else 
+	    	document.getElementById("show").innerHTML=d+a;
+
+}
+</script>
+</body>
+</html>
