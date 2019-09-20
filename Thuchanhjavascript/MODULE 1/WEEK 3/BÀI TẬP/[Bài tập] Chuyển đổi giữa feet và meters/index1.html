@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Chuyển đổi giứa Feet Và Metet</h1>
+<table border="0" style="width: 300px; height: 130px">
+	<tr>
+		<th>Giá trị cần chuyển đổi</th>
+		<th>Feet</th>
+		<th>Chuyển đổi</th>
+		<th>Metet</th>
+	</tr>
+	<tr>
+		<td><input type="text" id="txttext" class="sizes" value=""></td>
+		<td>
+			<select  id="txtfeet" class="size">
+				<option value="Feet" id="opfeet">Feet</option>
+				<option value="mete" id="opmete">Meters</option>
+
+			</select>
+		</td>
+		<td><input type="button" id="btncd" value="<- Chuyển Đổi ->" onclick="convertFeetMeter()"></td>
+		<td>
+			<select id="txtfeet1" class="size">
+				<option value="mete" id="opmete1">Meters</option>
+				<option value="Feet" id="opfeet1">Feet</option>
+			</select></td>
+
+	</tr>
+	<tr>
+		
+		<td colspan="2"><p id="showw"></p></td>
+	</tr>
+
+</table>
+<script type="text/javascript">
+	function convertFeetMeter() {
+		let a =parseFloat(document.getElementById('txttext').value);
+		let b =document.getElementById('txtfeet').value;
+		let c =document.getElementById('txtfeet1').value;
+		let d=' Kết quả chuyển đổi từ Feet sang Meters là: ';
+		let f=' Kết quả chuyển đổi từ Meters sang Feet là: ';
+		let g=' Hai giá trị chuyển đổi giống nhau: ';
+
+		if (b=='Feet' && c=='mete') 
+			document.getElementById('showw').innerHTML= d+(a/3.279);
+		else 
+			if (b=='mete' && c=='Feet') {
+				document.getElementById('showw').innerHTML= f+(a*3.279);
+			} else 
+				document.getElementById('showw').innerHTML= g + a;
+	}
+</script>
+</body>
+</html>
