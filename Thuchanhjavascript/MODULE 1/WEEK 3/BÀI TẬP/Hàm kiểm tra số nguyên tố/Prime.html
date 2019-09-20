@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script type="text/javascript">
+function isPrime() {
+	let inputNumber=+prompt("Nhập một số bất kỳ");
+	let flg =true;
+	if (inputNumber<2)
+		  flg = false ;
+	for (let i=2; i <inputNumber; i++) {
+		if (inputNumber%i==0) {
+			flg =false;
+		}
+
+	}
+	
+	if (flg==true) {
+		document.write(" số " + inputNumber +" số nguyên tố ");
+	} else document.write(" số " + inputNumber +" không phải số nguyên tố");
+}
+isPrime();
+
+</script>
+</body>
+</html>
