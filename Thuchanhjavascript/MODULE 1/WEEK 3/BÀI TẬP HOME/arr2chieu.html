@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mảng 2 chiều</title>
+</head>
+<body>
+<script type="text/javascript">
+function inputs() {
+	let nNum =prompt("nhập số Phần tử mảng");
+	
+	while (nNum<10) {
+		 	nNum =prompt("bạn phải nhập số lượng mảng lớn hơn 10");
+		 	
+		 }
+	return nNum;	 
+}
+function creatArr(arrA,n,m) {
+	
+	for(let i=0;i<n;i++){
+		arrA[i]=[];
+		for(j=0;j<m;j++){
+			arrA[i][j]=Math.floor(Math.random()*100+1);
+		}
+	}
+	
+}
+function showArr(arrA,n,m) {
+	for (let i=0; i < n; i++) {
+			document.write("<br>")
+		for (let j = 0; j < m; j++) {
+			document.write(arrA[i][j]+",");
+		}
+	}
+	
+}
+function isPrime(ar) {
+	if (ar<2) 
+		return false;
+	for (let i=2; i < ar; i++) {
+		if (ar%2===0) {
+			return false;
+		}
+	}
+	return true;
+}
+function countPrime(arrA) {
+	let count =0;
+	for (let i=0; i < arrA.length; i++) {
+		for (let j=0; j < arrA.length; j++) {
+			if (isPrime(arrA[i][j])) {
+				count++;
+			}
+		}
+	}
+	return count;
+}
+function main() {
+	let n = inputs();
+	let m =inputs();
+	let arr= [];
+	creatArr(arr,n,m);
+	showArr(arr,n,m);
+	document.write("<br>");
+	countPrime(arr);	
+	document.write(" Có "+countPrime(arr)+" Số Nguyên tố trong Mảng ");
+
+}
+main();
+</script>
+</body>
+</html>

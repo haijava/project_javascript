@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+function inPut() {
+		let num = parseInt(prompt(" nhập số lượng mảng "));
+		while (num < 10)
+		 {
+			num = parseInt(prompt(" nhập lại"));
+		} 
+		return num;
+}
+function creatArr(arr,n) {
+	for(let i=0;i<n;i++){
+		arr[i]=Math.floor(Math.random()*100+1);
+	}
+	
+}
+function isPrime(n) {
+	if (n<2) 
+		return false;
+	else 
+		for(let i=2;i<n;i++){
+		  	if (n%i===0) {
+		  		return false;
+		  	}
+
+		}
+		return true;
+}
+function countPri(arr) {
+	let count=0;
+	for(let i=0;i<arr.length;i++){
+		if (isPrime(arr[i])) {
+			count ++;
+		}
+	}
+	return count;
+}
+function main() {
+	let arr=[];
+	let n = inPut();
+	creatArr(arr,n)
+	document.write(arr +"<br>");
+	isPrime(arr);
+	countPri(arr);
+	document.write("có "+ countPri(arr)+" Số nguyên tố trong mảng");
+
+}
+main();
+	
+</script>
+</body>
+</html>
