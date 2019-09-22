@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 5</title>
+</head>
+<body>
+<script type="text/javascript">
+	function inputInteger() {
+		let n;
+		do {
+			n=prompt("nhập vào một số nguyên bất kỳ");
+			kt=parseFloat(n);
+		} while (isNaN(n)|| !Number.isInteger(kt)||kt>10);
+		return n;
+	}
+	function sxstu(a,b,c) {
+/*
+		let a=+prompt("nhập điểm kiểm tra");
+		let b=+prompt("nhập điểm thi giữ kỳ");
+		let c=+prompt("nhập điểm thi cuối kỳ");
+*/
+		let kq = parseFloat((a+b+c)/3);
+		if (kq>=9) {
+			document.write("xêp lại xuất sắc");
+		}else if (kq>=8) {
+			document.write("xêp lại xuất giỏi");
+		}else if (kq>=7) {
+			document.write("xêp lại khá");
+		} else if (kq>=5) {
+			document.write("xêp lại trung bình");
+		} else if(kq>=0)
+		    document.write("xêp lại yếu");
+
+
+	}
+
+	let a=inputInteger();
+	let b=inputInteger();
+	let c=inputInteger();
+	sxstu(a,b,c);
+</script>
+</body>
+</html>

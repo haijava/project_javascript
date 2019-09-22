@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai2</title>
+</head>
+<body>
+<script type="text/javascript">
+	function InputAge() {
+		let age ;
+		do {
+			age= prompt("nhập tuổi");
+			kt = parseFloat(age);
+		} while (isNaN(age)||!Number.isInteger(kt));
+		return age;
+	}
+	function checkAge(a) {
+		if (a<15) {
+			alert("không đủ tuổi vào lớp 10");
+
+		}else if (a>=15) {
+			alert("đủ tuổi vào lớp 10");
+		}
+	}
+	let ag= InputAge();
+	checkAge(ag);
+</script>
+	
+</body>
+</html>

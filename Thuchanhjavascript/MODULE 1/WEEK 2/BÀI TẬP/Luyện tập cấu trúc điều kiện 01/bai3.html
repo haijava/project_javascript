@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai3</title>
+</head>
+<body>
+<script>
+	function inputInteger() {
+		let n;
+		do {
+			n=prompt("nhập vào một số nguyên bất kỳ");
+			kt=parseFloat(n);
+		} while (isNaN(n)|| !Number.isInteger(kt));
+		return n;
+	}
+	function result(b) {
+		if (b>0) {
+			document.write("số nguyên nhập vào lớn hơn 0");
+		}else if (b<0) 
+				document.write("số nguyên nhập vào nhỏ hơn 0");
+	
+	}
+	let n =inputInteger();
+	result(n);
+
+</script>
+</body>
+</html>

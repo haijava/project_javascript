@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai4</title>
+</head>
+<body>
+<script>
+	function inputInteger() {
+		let n;
+		do {
+			n=prompt("nhập vào một số nguyên bất kỳ");
+			kt=parseFloat(n);
+		} while (isNaN(n)|| !Number.isInteger(kt));
+		return n;
+	}
+	function checMax(a,b,c) {
+		let max = a;
+		if (b>max)
+			max=b;
+		if (c>max) 
+			max=c;
+		return max;
+	}
+	let a=inputInteger();
+	let b=inputInteger();
+	let c=inputInteger();
+	alert(checMax(a,b,c));
+</script>	
+</body>
+</html>

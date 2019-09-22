@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai7</title>
+</head>
+<body>
+<script>
+ const pricePhone = 10000;
+ let numbUser =+prompt("nhập số phút sử dụng");
+ let moneyTotal =0;
+ if (numbUser <50) {
+ 	moneyToal = pricePhone*numbUser;
+ 	document.write("tiền điện thoại "+moneyToal);
+ }
+ else if(numbUser<100){
+ 		moneyToal=(numbUser*pricePhone)+(numbUser*pricePhone* 10/100);
+ 		document.write("tiền điện tăng thêm 10% nếu dung trên 50 phút nhưng dưới 100 phút " +moneyToal);
+ 	   }
+ else if (numbUser<200) {
+ 	moneyToal =(numbUser*pricePhone)+(numbUser*pricePhone* 20/100);
+ 	document.write("tiền điện tăng thêm 20% nếu dung trên 100 phút nhưng dưới 200 phút " +moneyToal);
+ }	
+ 
+</script>	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 1</title>
+</head>
+<body>
+<script type="text/javascript">
+function inputAandB() {
+		let n;
+		
+		do{
+		    n = prompt("nhập số");
+			y=parseFloat(n);
+
+		}while(isNaN(n)||(!Number.isInteger(y)))
+
+	return n;
+}
+function checkDivs(a,b) {
+	if (a%b===0) {
+		document.write("a chia hêt cho b");
+	}
+	else 
+		document.write("a không chia hết cho b");
+}
+ let m =inputAandB();
+ let n =inputAandB();
+ checkDivs(m,n);
+ /*let a =+ prompt("nhap a");
+ let b =+prompt("nhập b");
+ if (a%b===0) {
+ 	document.write("a chia hết b");
+
+ } else document.write("a không chia hết b");*/
+</script>
+</body>
+</html>
