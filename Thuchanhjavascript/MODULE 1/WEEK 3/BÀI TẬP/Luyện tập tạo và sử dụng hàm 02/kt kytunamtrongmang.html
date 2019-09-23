@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kiểm tra ký tự nằm trong mảng</title>
+</head>
+<body>
+<script type="text/javascript">
+	function inputArr(argument) {
+		let n;
+		do{
+			n=prompt("nhập số phần tử mảng");
+			kt= parseFloat(n);
+		}while(isNaN(n)||!Number.isInteger(kt))
+		return kt;
+	}
+/*function showArr(arr,n) {
+	
+	for(let i=0; i<n;i++){
+		arr[i]=prompt("nhập phần tử" +i);
+		document.write(arr[i]+", ");
+	}
+		
+}*/
+function checkChar(arr,x) {
+	document.write("<br>");
+	let flag =false;
+	for (let i=0; i < arr.length; i++) {
+		if (arr[i]==x) {
+			flag=true;
+			break;
+		}
+		else 
+			flag=false;
+	}
+	if (flag==true) {
+		document.write("có kí tự "+x+" trong mảng");
+	}else 
+		document.write("không có kí tự "+x+" trong mảng");
+}
+let n=inputArr();
+let arr=[];
+/*showArr(arr,n);*/
+let x= prompt("nhập kí tự bất kỳ");
+checkChar(arr,x);
+</script>	
+</body>
+</html>

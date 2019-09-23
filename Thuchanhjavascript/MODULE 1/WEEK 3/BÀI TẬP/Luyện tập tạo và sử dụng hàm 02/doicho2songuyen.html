@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>doi cho hai so nguyên</title>
+</head>
+<body>
+<script type="text/javascript">
+	function inputI() {
+		let n;
+		do{
+			n=prompt("nhập số");
+			kt= parseFloat(n);
+		}while (isNaN(n)||!Number.isInteger(kt)) 
+		return kt;
+	}
+	function showLocation(a,b) {
+		/*let firts =a;
+		let lasts =b;*/
+		document.write(" hai số nguyên khi chưa đổi vị trí ");
+		document.write(a+" , ");
+		document.write(b+"<br>");
+
+	}
+
+	function changeLocation(a,b) {
+		let tam;
+		tam =a;
+		a=b;
+		b=tam;
+		document.write(" hai số nguyên khi  đổi vị trí ");
+		document.write(a+" , ");
+		document.write(b);
+
+	}
+	let a =inputI();
+	let b =inputI();
+	showLocation(a,b)
+	changeLocation(a,b);
+</script>	
+</body>
+</html>

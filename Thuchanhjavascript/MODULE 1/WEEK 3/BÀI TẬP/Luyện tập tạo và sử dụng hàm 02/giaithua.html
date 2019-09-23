@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giai Thừa</title>
+</head>
+<body>
+<script type="text/javascript">
+function inputN() {
+		let r;
+		do {
+			r= prompt("nhập số bất kỳ");
+			kt = parseFloat(r)
+		} while (isNaN(r)||!Number.isInteger(kt));
+		return kt;
+}
+function giaithuaN(n) {
+	let kq=1;
+	for (let i=1; i <= n; i++) {
+		 kq=kq*i;
+	}
+	return kq;
+}
+let n = inputN();
+alert(giaithuaN(n));
+</script>	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kiểm tra số nhỏ nhất</title>
+</head>
+<body>
+<script type="text/javascript">
+	function inputN() {
+		let n;
+		do {
+			n=prompt("nhập gia trị");
+			kt =parseFloat(n);
+		} while (isNaN(n)||!Number.isInteger(kt));
+		return kt;
+	}
+	function checkMin(a,b,c) {
+		let min =a;
+		if (b<min) {
+			min=b;
+		}
+		if (c<min) {
+			min=c;
+		}
+		return min;
+	}
+	let a=inputN();
+	let b=inputN();
+	let c=inputN();
+	alert("số nhỏ nhất trong 3 số" + checkMin(a,b,c));
+</script>	
+</body>
+</html>

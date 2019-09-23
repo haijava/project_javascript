@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tính bình phương một số nhập vào</title>
+</head>
+<body>
+<script>
+function inputN() {
+	let n;
+	do {
+		n= prompt("Nhập một số bất kỳ");
+		numInteg= parseFloat(n);
+	} while (isNaN(n)||!Number.isInteger(numInteg));
+	return numInteg;
+}
+function squareN(n) {
+	let kq =n*n;
+	return kq;
+}
+let n=inputN();
+alert(squareN(n));
+</script>	
+</body>
+</html>

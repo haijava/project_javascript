@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script type="text/javascript">
+	function checkInte() {
+		let n=+prompt("nhập một số bất kì");
+		while (isNaN(n)) {
+			n= prompt("nhập lại");
+		}
+		let flag =false;
+		if (Number.isInteger(n) && n>0) {
+			flag=true;
+		}
+		if (flag==true) {
+			document.write(n +" là số nguyên dương");
+		}
+		else document.write(n+ " không phải là số nguyên dương");
+	}
+	checkInte();
+</script>
+</body>
+</html>

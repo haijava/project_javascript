@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tính diện tích , chu vi hình tròn</title>
+</head>
+<body>
+<script type="text/javascript">
+function inputRadius() {
+		let r;
+		do {
+			r= prompt("nhập bán kính");
+			kt = parseFloat(r)
+		} while (isNaN(r)||!Number.isInteger(kt));
+		return kt;
+}
+function circleArea(r) {
+	const pi=3.14;
+	let s =pi*r*r;
+	return s;
+}
+function dinameteCircle(p) {
+	const pi=3.14;
+	let cv =2*pi*p;
+	return cv;
+}
+let n = inputRadius();
+alert("Diện tích hình tròn "+ circleArea(n));
+alert("Chu vi hình tròn "+dinameteCircle(n));
+</script>	
+</body>
+</html>

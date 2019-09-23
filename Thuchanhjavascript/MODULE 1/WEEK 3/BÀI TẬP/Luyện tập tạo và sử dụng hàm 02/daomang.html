@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>đảo mảng</title>
+</head>
+<body>
+<script type="text/javascript">
+	function inputI() {
+		let n;
+		do{
+			n=prompt("nhập số phần tử mảng");
+			kt= parseFloat(n);
+		}while (isNaN(n)||!Number.isInteger(kt)) 
+		return kt;
+	}
+	function showArray(arr,n) {
+		for (let i=0; i < n; i++) {
+			arr[i]=Math.floor(Math.random()*10 +1);
+			document.write(arr[i]+" , ");
+		}
+		
+	}
+	function daomang() {
+		showArray(arr,n);
+		let dau=0;
+		let cuoi= arr.length-1;
+		while (dau<cuoi) {
+			let tam=arr[dau];
+			arr[dau] =arr[cuoi];
+			arr[cuoi]=tam;
+			dau ++;
+			cuoi --;
+
+		}
+		document.write("mảng sau khi đảo" +arr);
+	
+	}
+	let n=inputI();
+	let arr=[];
+	daomang()
+</script>	
+</body>
+</html>
