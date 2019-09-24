@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funny Circle</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="1368px" height="1200px" style="border : 1px solid red">
+		
+	</canvas>
+<script type="text/javascript">
+
+function Circle(x,y,radius){
+		this.x = x;
+		this.y = y;
+		this.radius = radius;
+		/*this.getX = function(){
+			return this.x;
+		}
+		this.getY = function(){
+			return this.y;
+		}
+		this.getRadius = function(){
+			return this.radius;
+		}
+		this.SetX = function(x){
+			this.x = x;
+		}
+		this.SetY = function(y){
+			this.y = y;
+		}
+		this.Radius = function(radius){
+			this.radius = radius;
+		} */
+
+}
+/*function createCirclr(){
+	var ctx = document.getElementById("myCanvas").getContext("2d");
+
+	let radius =Math.floor(Math.random()*300 +1)
+    var circle= new Circle(500,350,80);
+    
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    ctx.strokeStyle ="red";
+    ctx.stroke();
+    ctx.fill();
+	
+}	*/
+function getRandomNumHex(){
+	let color = Math.floor(Math.random()*255 +1);
+	return color;
+}
+function getrandomToado(){
+	let toado = Math.floor(Math.random()*1000 +1);
+	return toado;
+}
+/*function getToado(){
+	let x = getrandomToado();
+	let y = getrandomToado();
+	return x
+
+}*/
+function getColorRandom(){
+	let red = getRandomNumHex();
+	let green = getRandomNumHex();
+	let blue =getRandomNumHex();
+	 return "rgb(" + red + ","+ green +","+ blue +")";
+}
+/*function creatCircle(){
+	let canvas =document.getElementById('myCanvas');
+	let ctx = canvas.getContext("2d");
+	let radius = Math.floor(Math.random()*300 +1);
+	let cri = new Circle(555,350,radius);
+	ctx.arc(cri.x,cri.y,cri.radius,0,2*Math.PI);
+	ctx.strokeStyle = getColorRandom();
+	ctx.stroke();
+	ctx.fillStyle = getColorRandom();
+	ctx.fill();
+
+
+}*/
+function creatCircled(){
+	let canvas =document.getElementById('myCanvas');
+	let ctx = canvas.getContext("2d");
+	let radius = Math.floor(Math.random()*150 +1);
+	let x = getrandomToado();
+	let y = getrandomToado();
+
+	let cri = new Circle(x,y,radius);
+	ctx.arc(cri.x,cri.y,cri.radius,0,2*Math.PI);
+	ctx.strokeStyle = getColorRandom();
+	ctx.stroke();
+	ctx.fillStyle = getColorRandom();
+	ctx.fill();
+
+
+}
+/*createCirclr();*/
+/*creatCircled();*/
+function creatMultiCircle(){
+	for (let i=0; i < 10; i++) {
+		creatCircled();
+		
+	}
+}
+creatMultiCircle();
+
+</script>	
+</body>
+</html>
