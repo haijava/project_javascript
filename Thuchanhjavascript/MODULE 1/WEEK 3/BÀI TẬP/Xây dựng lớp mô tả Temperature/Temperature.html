@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Temperature</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Temperatured(TemC) {
+		this.TemC = TemC;
+		/*this.TemF = TemF;
+		this.TemKevin = TemKevin;*/
+		this.SetC = function(TemC){
+			this.TemC = TemC;
+		}
+		this.getC = function(){
+			return this.TemC;
+		}
+		this.ChangeCF = function(){
+			return  this.TemC*1.8 + 32;
+		} 
+		this.ChangeCKevin =function(){
+			return this.TemC + 273.15;
+		}
+	}
+	let temperature = new Temperatured();
+	temperature.SetC(25);
+	let tem =temperature.getC();
+	
+	let cf =temperature.ChangeCF();
+	document.write(" Chuyển "+tem+"C sang độ F: "+ cf +"<br>"); 
+
+	let ckev = temperature.ChangeCKevin();
+	document.write("Chuyển "+tem+"C sang độ Kevin: "+ckev);
+
+
+	
+
+</script>	
+</body>
+</html>
