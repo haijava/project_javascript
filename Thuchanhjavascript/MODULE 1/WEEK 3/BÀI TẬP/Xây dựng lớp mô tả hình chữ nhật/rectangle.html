@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>draw rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1320px" height="334px" style="border: 1px solid black"></canvas>	
+<script type="text/javascript">
+function rectangle(longs,widths) {
+	this.longs = longs;
+	this.widths = widths;
+	this.areaRectangle = function(){
+		return this.longs * this.widths ;
+	}
+	this.perimeterRectangle = function(){
+		return (this.longs + this.widths)*2 ;
+	}
+	this.creatRectangle = function(){
+		let canvas = document.getElementById('myCanvas');
+		let ctx = canvas.getContext("2d");
+		//let rec = new rectangle(10,4);
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(100,150,150,75);
+		}
+		this.setLongs = function(longs){
+			this.longs = longs;
+		}
+		this.setWidths =function(widths){
+			this.widths =widths;
+		}
+		this.getLongs = function(){
+			return this.longs;
+		}
+		this.getWidths = function(){
+			return this.widths;
+		}
+}
+//let n = Math.floor(Math.random())
+let rect = new rectangle();
+ rect.setLongs(15);
+let cd = rect.getLongs();
+
+rect.setWidths(5);
+let cr = rect.getWidths();
+
+let ar =rect.areaRectangle();
+document.write("Area of rectangle is " +ar+"<br>");
+
+let pr =rect.perimeterRectangle();
+document.write("Primeter of Rectangle is " + pr);
+
+rect.creatRectangle(); 
+
+</script>
+</body>
+</html>
