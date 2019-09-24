@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xây dựng lớp hình tròn</title>
+</head>
+<body>
+<script type="text/javascript">
+function circle(radius,color){
+this.radius = radius;
+this.color = color;
+this.Circles = function(){
+
+}
+this.getRadius = function(){
+	return radius;
+}
+
+this.getArea = function(){
+	const pi = 3.14;
+	return  pi * radius * radius;
+}
+};
+let cir =new circle(2);
+
+let rad = cir.getRadius();
+let are = cir.getArea();
+document.write("Area of circle "+are);
+
+</script>	
+</body>
+</html>
