@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>check isPalindrome</title>
+</head>
+<body>
+<script type="text/javascript">
+/*function isPalindrome() {
+	let flag =true;
+	let a = 'ansakkasa';
+	for (let i=0; i < a.length; i++) {
+		if (a[i] != a[a.length-i-1] ) {
+			flag = false;
+			break;
+		}
+	}
+	if (flag==false) {
+		document.write("không đối xứng");
+	}else 
+		document.write(" đối xứng");
+
+
+}
+isPalindrome();*/
+
+
+
+function isPalindrome(s){
+	this.s = s;
+	this.getInputS = function(){
+		return this.s;
+	}
+	this.setS = function(s){
+	    this.s = s;
+	}
+	this.checkdx =function(){
+
+		let flag = false;
+		for (let i=0; i < this.s.length; i++) {
+			if (this.s[i]!=this.s[this.s.length - i -1]) {
+				flag =true;
+				break;
+			}
+		}
+		if (flag==true) {
+			document.write("không đối xứng");
+		}else
+		 	document.write("đối xứng");
+	}
+
+}
+let ch = new isPalindrome();
+ch.setS("assa")
+let cc = ch.getInputS();
+//alert(cc);
+let dd =ch.checkdx();
+
+</script>
+</body>
+</html>
