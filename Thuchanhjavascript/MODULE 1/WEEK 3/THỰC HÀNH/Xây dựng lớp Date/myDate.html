@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xây dựng lớp Date</title>
+</head>
+<body>
+<script type="text/javascript">
+function myDate(day,month,year){
+	this.day = day;
+	this.month = month;
+	this.year = year;
+	this.getDay = function() {
+		return this.day;
+	}
+	this.getMonth = function() {
+		return this.month;
+    }
+    this.getYear = function() {
+    	return this.year
+    }
+    this.setDay = function (day){
+    	this.day = day;
+    }
+    this.setMonth = function (month){
+    	this.month = month;
+    }
+    this.setYear = function (year){
+    	this.year = year;
+    }
+    this.setDate = function(day,month,year){
+    	this.day = day;
+    	this.month =month;
+    	this.year =year;
+    	//document.write(day +"//" +month+"//"+year);
+    }
+    this.toString = function(){
+        return this.day +"/" + this.month +"/" +this.year ;
+       
+    }
+
+ }
+ let date = new myDate(2,12,1998);
+
+ let ngay = date.getDay();
+ let thang = date.getMonth();
+ let nam = date.getYear();
+
+ document.write(ngay +"/"+thang+"/"+nam+"<br>");
+
+ date.setDay(30);
+ date.setMonth(12);
+ date.setYear(1985);
+
+ ngay = date.getDay();
+ thang = date.getMonth();
+ nam = date.getYear();
+
+ document.write("Sau khi thay đổi là "+ ngay + " / " + thang + " / " + nam +"<br>");
+ 
+  date.setDate(11,2,1989);
+  ngay = date.getDay();
+  thang = date.getMonth();
+  nam = date.getYear();
+  document.write("Sau khi thay đổi là "+ ngay + " / " + thang + " / " + nam +" setdate ");
+  document.write(date.toString());
+</script>	
+</body>
+</html>
