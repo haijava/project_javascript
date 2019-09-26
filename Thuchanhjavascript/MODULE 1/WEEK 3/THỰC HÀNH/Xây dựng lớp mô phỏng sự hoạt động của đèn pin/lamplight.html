@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lamp</title>
+</head>
+<body>
+<script type="text/javascript">
+function Battery(){
+
+
+	this.setEnergy = function(energy){
+		this.energy = energy;
+	}
+
+	this.getEnergy = function(){
+		return this.energy;
+	}
+
+	this.decreaseEnery = function(){
+		if(this.energy>0){
+			this.energy--;
+		}
+	}
+}
+function FlashLamp(status,battery) {
+	this.status = status;
+	this.battery = battery;
+
+	this.setBattery = function(battery){
+		this.battery = battery;
+	}
+
+	this.getBatteryInfo = function(){
+		return this.battery.getEnergy();
+	}
+
+	this.light = function(){
+		if (this.status) {
+			alert("đèn sáng");
+		}else
+			alert("đèn tắt");
+	}
+
+	this.turnOn = function(){
+		this.status =true;
+	}
+
+	this.turnOff = function(){
+		this.status = false;
+	} 
+}
+
+let den1 = new Battery();
+den1.setEnergy(200);
+
+
+let flaslam = new FlashLamp();
+flaslam.setBattery(den1);
+
+document.write("Battery info : " +flaslam.getBatteryInfo() + "<br>");
+flaslam.light();
+
+document.write("turn On" +"<br>");
+flaslam.turnOn();
+flaslam.light();
+document.write("Battery info : " +flaslam.getBatteryInfo() + "<br>");
+den1.decreaseEnery()
+
+</script>
+</body>
+</html>
