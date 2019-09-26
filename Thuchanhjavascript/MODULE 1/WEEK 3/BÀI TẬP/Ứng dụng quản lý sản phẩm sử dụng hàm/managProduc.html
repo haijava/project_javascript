@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quản lý sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="countproduc()">
+	<h1>Add New Product</h1>
+	<table id="addsp">
+        <tr>
+            <td><input class="changeText" type="text" placeholder=" New product " id='addd'></td>
+            <td><input class="changetButton" type="button" id="btnad" onclick="add();addd.value =null;" value="Add" /></td>
+        </tr>
+    </table>
+    <table>
+    	<tr>
+    		<td id="prd"><h4>Product Name</h4></td>
+    		<td><p id="shows" ></p></td>
+    	</tr>
+    </table>
+    <h4 id="shows"></h4>
+    <table id="tables">
+		
+	</table>
+
+	
+<script type="text/javascript" src="javascript.js"></script>	
+</body>
+</html>

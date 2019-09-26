@@ -1,0 +1,45 @@
+#addd{
+	width: 252px;
+	font-size: 20px;
+	margin-bottom: 19px;
+	margin-left: -3px;
+}
+.nameProduc {
+	width: 246px;
+	font-size: 20px;
+	height: 53px;
+}
+#btnad{width: 64px;height: 31px;margin-bottom: 
+	18px;border-radius: 
+	30px;background-color: green;color: white;
+}
+.changbt1{
+	width: 85px;
+	background-color: #008000bd;
+	color: white;
+	height: 53px;
+	border-radius: 9px;
+	font-size: 22px;
+}
+.changbt{
+	width: 85px;
+	background-color: #008000bd;
+	color: white;
+	height: 53px;
+	border-radius: 9px;
+	margin-left: 42px;
+	font-size: 22px;
+}
+.trt{
+	background-color: #80808033;
+}
+#prd{
+	width: 390px;
+	font-size: 20px;
+}
+#shows{
+	
+font-size: 21px;
+	
+color: red;
+}
