@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lightSwitch</title>
+</head>
+<body>
+<script type="text/javascript">
+	class SwitchButton{
+		constructor(status){
+			this.status = status;
+			
+			
+		}
+		connectToLamp(ElectricLamp){
+
+			this.lamp = ElectricLamp;
+		}
+		switchOff(){
+			this.status = "tắt";
+			this.lamp.turnOff();
+		}
+		switchOn(){
+			this.status = "bật";
+			
+		}
+	}
+	class ElectricLamp{
+		constructor(status){
+			this.status = status;
+		}
+		turnOff(){
+			this.status ="tối";
+
+		}
+		turnOn(){
+			this.status = "sáng";
+		}
+	}
+let neon = new ElectricLamp("tat");
+let sw1 = new SwitchButton("tat");
+sw1.connectToLamp(neon);
+
+</script>	
+</body>
+</html>
