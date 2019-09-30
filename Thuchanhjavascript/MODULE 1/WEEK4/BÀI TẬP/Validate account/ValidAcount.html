@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Valid Account</title>
+</head>
+<body>
+<script type="text/javascript">
+	regular = /^[_a-z0-9]{6,}$/;
+	
+	function checkAccount(str) {
+		if (regular.test(str)) {
+			return true;
+		}else
+		return false;
+	}
+	
+	let str = "@exuan";
+	console.log(checkAccount(str));
+	str ="lexuanhai";
+	console.log(checkAccount(str));
+</script>	
+</body>
+</html>
