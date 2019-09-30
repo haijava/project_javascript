@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ValidEmail</title>
+</head>
+<body>
+<script type="text/javascript">
+	let regu = /^[a-zA-Z0-9]+[a-zA-Z0-9]*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)$/;
+	function ValidEmail(str) {
+		if (regu.test(str)) {
+			return true;
+		}
+		else 
+			return false;
+	}
+	ValidEmail("a@gmail.com");
+	ValidEmail("@gmail.com");
+	ValidEmail("a@gmail@.com");
+</script>	
+</body>
+</html>
