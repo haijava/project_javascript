@@ -1,0 +1,63 @@
+
+#myCanvas{
+	display: block;
+	margin: 0px auto;
+	background-color: white;
+}
+#sco{
+	
+font-size: 25px;
+font-weight: bold;
+color: red;
+	
+margin-left: 15px;
+}
+#sc{font-weight: bold;
+	font-size: 25px;
+	color: blue;
+	margin-left: 118px;}
+#lli{
+	font-weight: bold;
+	color: red;
+	font-size: 25px;
+	margin-left: 15px;
+}
+#live{
+	font-weight: bold;
+	color: blue;
+	font-size: 25px;
+	margin-left: 145px;
+}
+#leve{
+	font-size: 25px;
+	color: blue;
+	font-weight: bold;
+	margin-left: 156px;
+}
+#lle{
+	font-size: 25px;
+	color: red;
+	font-weight: bold;
+	
+}
+#gameball{
+	background-color: black;
+}
+.copy{
+	background-color: grey;
+}
+#h3{
+	font-size: 13px;
+	display: block;
+	margin-left: 435px;
+}
+#hd{
+	font-size: 15px;
+	color: white;
+}
+#ball{
+	font-size: 15px;
+	color: #ee36f4;
+	font-family: 'Righteous', cursive;
+	margin-left: 369px;
+}
